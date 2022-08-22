@@ -1,13 +1,11 @@
-import react from 'react'
-
-import './App.css'
-
+import Inicio from "./Components/Inicio"
+import "./styles/components/app.sass"
 function App() {
   
 
   return (
-    <div className="App">
-     
+    <div id="portfolio">
+    <Inicio/>
     </div>
   )
 }
