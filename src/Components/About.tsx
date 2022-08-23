@@ -5,7 +5,7 @@ function About() {
     <section className='about' id='about'>
       <h1>about</h1> 
       <article>
-       
+       testar dist
       </article>
     </section>
   )
