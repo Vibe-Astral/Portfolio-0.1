@@ -1,11 +1,13 @@
-import Inicio from "./Components/Inicio"
+import About from "./Components/About"
+import Start from "./Components/Start"
 import "./styles/components/app.sass"
 function App() {
   
 
   return (
     <div id="portfolio">
-    <Inicio/>
+    <Start/>
+    <About/>
     </div>
   )
 }

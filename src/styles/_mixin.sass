@@ -1,9 +1,13 @@
-@use 'variables'
- 
-@mixin center
-  display: flex
-  justify-content: center
-  align-items: center
+@use './_variables' as variables
 
-  
-  
+@mixin justification($flex: flex,$justify: center, $align: center)
+  display: $flex
+  justify-content: $justify
+  align-items: $align
+
+@mixin bg-image
+  background-image: url(../../imgs/737481.png)
+  background-attachment: local
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover

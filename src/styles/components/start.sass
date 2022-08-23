@@ -1,0 +1,30 @@
+@use  '../_variables' as variables
+@use   '../_mixin'  as mixin
+$scren-small: 600px
+
+#start
+  @include mixin.bg-image
+  width: 100%
+  height: 100vh
+  @include mixin.justification($flex: flex,$justify: start, $align: center)
+  flex-direction: column  
+
+  .start__view
+    width: 450px
+    height: 100px
+    margin-top: 100px
+    border: 3px solid white
+    font-size: 20px
+    text-align: justify
+    @include mixin.justification($flex: flex,$justify: start, $align: start )
+    flex-direction: column
+    margin-bottom: 90px
+    p
+      padding: 10px 5px 10px 5px 
+    @media (max-width:  $scren-small)  
+      width: 300px
+      font-size: 15px
+    @media (orientation: landscape) and (max-width: 900px)  and (max-height: 700px)
+      margin: 0%
+   
+    
