@@ -1,16 +1,17 @@
 @use './_variables'
-
+@use './_mixin'
 *
   padding: 0
   margin: 0
   font-family: "sans-serif"
   box-sizing: border-box
   color: variables.$text-color
-
+  @include mixin.hideScrollbar
+  
 body
   background-color: variables.$bg-color
 
-a, svg
+a, svg, span
   transition: .4s
   font-family: variables.$text-font-undersans
   text-decoration: none
@@ -19,4 +20,8 @@ h1
 
 p
   font-family: variables.$text-font-undersans
-  
+
+button
+  padding: 0
+  font-family: variables.$text-font-undersans
+  background-color: transparent
