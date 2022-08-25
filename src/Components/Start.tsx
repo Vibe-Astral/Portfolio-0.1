@@ -8,7 +8,7 @@ function Start() {
           <p>* ( this Portfolio brings you a nostalgic feeling... )</p>
         </span>
         <span>
-          <p>* ( it fills you with determination )</p>
+          <p id="p2">* ( it fills you with determination )</p>
         </span>
       </div>
       <div>
