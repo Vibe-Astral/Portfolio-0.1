@@ -1,4 +1,5 @@
 import "../styles/components/start.sass"
+import hearth from "../imgs/pulsehearth.gif"
 
 function Start() {
   return (
@@ -11,8 +12,8 @@ function Start() {
           <p id="p2">* ( it fills you with determination )</p>
         </span>
       </div>
-      <div>
-        <a href="#about">Continue</a>
+      <div id="start__continue">
+        <a href="#about"><img src={hearth}alt="" />Continue<img src={hearth} alt="" /></a>
       </div>
     </section>
   )

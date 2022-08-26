@@ -8,7 +8,6 @@ $scren-small: 600px
   height: 100vh
   @include mixin.justification($flex: flex,$justify: start, $align: center)
   flex-direction: column  
-
   .start__view
     width: 450px
     height: 100px
@@ -31,5 +30,14 @@ $scren-small: 600px
       font-size: 14px
     @media (orientation: landscape) and (max-width: 900px)  and (max-height: 700px)
       margin: 0%
-   
+#start__continue
+  a
+    img
+      visibility: hidden
+      width: 20px
+  a
+    &:hover 
+      img
+        visibility: visible
+      
     
