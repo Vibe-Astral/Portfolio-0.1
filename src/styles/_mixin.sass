@@ -18,7 +18,6 @@
 
     -ms-overflow-style: none
     scrollbar-width: none
-
 @mixin typing($delay: 0s)
   overflow: hidden
   white-space: nowrap
@@ -32,8 +31,68 @@
       width: 100%
 
 @mixin animation-lanca
-  @keyframes typing
+  @keyframes lanca
     0%
-      width: 0%
+      bottom: 0px
+      right: 0px
+      scale: 0
+    25%
+      bottom: 100px
+      right: 100px
+      rotate: 40deg
+      scale: 3
     100%
-      width: 100%
+      bottom: 100px
+      right: 100px  
+      rotate: 140deg
+      scale: 4
+  @keyframes lanca2
+    0%
+      top:  0px
+      right: 0px
+      rotate: 0deg
+      scale: 0
+    25%
+      top: 200px
+      right: 100px
+      rotate: 40deg
+      scale: 3
+    100%
+      top: 150px
+      right: 100px
+      rotate: 50deg
+      scale: 4
+    
+
+  @keyframes lanca-direita
+    0%
+      bottom: 0px
+      left: 0px
+      rotate: 0deg
+      scale: 0
+    25%
+      bottom: 100px
+      left: 100px
+      rotate: -140deg
+      scale: 3
+    100%
+      bottom: 100px
+      left: 100px
+      rotate: -135deg
+      scale: 4
+  @keyframes lanca-direita-2
+    0%
+      top:  0px
+      left: 0px
+      rotate: 0deg
+      scale: 0
+    25%
+      top: 200px
+      left: 100px
+      rotate: -40deg
+      scale: 3
+    100%
+      top: 150px
+      left: 100px
+      rotate: -50deg
+      scale: 4

@@ -1,4 +1,30 @@
 @use '../_mixin' as mixin
 @use '../_variables' as variables
-.interaction__card__item
+
+#fight__card
+  display: flex
+  justify-content: center
+  align-items: center
+  .fight__div
+    position: absolute
+    width: 400px
+    display: flex
+    justify-content: center
+    align-items: center
+  
   #lanca
+    position: relative
+    animation: lanca 5s forwards
+    @include mixin.animation-lanca
+  #lança__direita
+    position: relative
+    animation: lanca-direita 5s forwards
+    @include mixin.animation-lanca
+  #lanca2
+    position: relative
+    animation: lanca2 5s forwards
+    @include mixin.animation-lanca
+  #lanca__direita__2
+    position: relative
+    animation: lanca-direita-2 5s forwards
+    @include mixin.animation-lanca
