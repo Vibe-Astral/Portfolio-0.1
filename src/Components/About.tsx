@@ -12,23 +12,6 @@ function About() {
   let hour = d.getHours()
   let minutes = d.getMinutes()
 
-  // if(message && aboutMessage){
-  //   message.style.display = "none"
-  // }
-  // const save = () => {
-  //   if (message && aboutMessage && saveHour) {
-  //     message.style.display = "flex"
-  //     aboutMessage.style.display = "none"
-  //     saveHour.textContent = `${hour}:${minutes}`
-  //   }
-  // }
-  // const retur = () => {
-  //   if(message && aboutMessage){
-  //     message.style.display = "none"
-  //     aboutMessage.style.display = "flex"
-  //   }
-  // }
-
   const save = () => {
     if (aboutMessage && message  && saveHour) {
       console.log("carregado")
@@ -50,6 +33,7 @@ function About() {
       console.log("carregando")
     }
   }
+  
   return (
     <section className='about' id='about'>
       <h1>about</h1>

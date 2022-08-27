@@ -2,7 +2,7 @@ import React from 'react'
 
 function Mercy() {
   return (
-    <div>Mercy</div>
+    <div className="interaction__card__item">Mercy</div>
   )
 }
 

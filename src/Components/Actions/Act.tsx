@@ -2,7 +2,7 @@ import React from 'react'
 
 function Act() {
   return (
-    <div>Act</div>
+    <div className="interaction__card__item">Act</div>
   )
 }
 

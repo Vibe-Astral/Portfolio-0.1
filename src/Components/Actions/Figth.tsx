@@ -1,8 +1,12 @@
-import React from 'react'
+import "../../styles/components/figth.sass"
+import lanca from "../../imgs/lança.jpg"
 
 function Figth() {
   return (
-    <div>Figth</div>
+    <div className="interaction__card__item">
+      <img src={lanca}alt="" id="lanca" />
+    <p>* (Acho que Você Realmente não quer isso)</p>
+    </div>
   )
 }
 

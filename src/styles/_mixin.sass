@@ -19,14 +19,21 @@
     -ms-overflow-style: none
     scrollbar-width: none
 
-@mixin typing($delay: 0s) 
+@mixin typing($delay: 0s)
   overflow: hidden
   white-space: nowrap
   animation: typing 3s $delay steps(30, end) forwards
- 
+
 @mixin animation-mixin
   @keyframes typing
-    0% 
+    0%
       width: 0%
-    100% 
+    100%
+      width: 100%
+
+@mixin animation-lanca
+  @keyframes typing
+    0%
+      width: 0%
+    100%
       width: 100%
