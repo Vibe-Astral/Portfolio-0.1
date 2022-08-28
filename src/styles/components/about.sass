@@ -82,7 +82,7 @@ $scren-small: 600px
 #about__message
   width: 450px
   height: auto
-  @include mixin.justification($flex: none,$justify: space-around , $align:flex-start )
+  @include mixin.justification($flex: flex,$justify: space-around , $align:flex-start )
   margin-top: 50px
   border:3px solid white
   flex-direction: column
@@ -90,6 +90,16 @@ $scren-small: 600px
   font-size: 20px
   p
     padding: 15px 15px 15px 15px
+  &:nth-child(1)
+    @include mixin.typing($delay: 1s)
+    @include mixin.animation-mixin
+  &:nth-child(2)
+    @include mixin.animation-mixin
+    @include mixin.typing($delay: 2s)
+  &:nth-child(3)  
+    @include mixin.animation-mixin
+    @include mixin.typing($delay: 3s)
+
   @media (max-width: $scren-small )
     width: 250px
   img
