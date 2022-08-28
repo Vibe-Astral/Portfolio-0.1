@@ -22,7 +22,7 @@ function Interaction() {
       } else if (id == 4) {
         return <Mercy />
       } else {
-        return <div> Problems</div>
+        return <div> Problems </div>
       }
     }
     return (
