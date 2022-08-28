@@ -8,10 +8,10 @@
   .fight__div
     position: absolute
     width: 400px
-    display: flex
-    justify-content: center
-    align-items: center
+    @include mixin.justification($flex: flex,$justify: center, $align: center )
+    flex-direction: column
     p
+      margin-top: 20px
       width: 100px
       text-align: center
       @include mixin.typing($delay: 0s)
