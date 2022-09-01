@@ -8,17 +8,15 @@ $scren-small: 600px
   text-align: center
   @include mixin.justification(flex, $justify:start , $align: center )
   flex-direction: column
-
   .andar_toriel
     width: 100%
     display: flex
     align-items: center
-    
 
     img
       width: 100px
       position: relative
-      animation: walk 10s linear 0s infinite 
+      animation: walk 10s linear 0s infinite
 
   .about__card
     width: 450px
@@ -40,14 +38,14 @@ $scren-small: 600px
       button
         font-size: 30px
         cursor: pointer
-        margin: 10px 50px 10px 0px 
+        margin: 10px 50px 10px 0px
       img
         width: 30px
         visibility: hidden
       span:hover img
         visibility: visible
 
-    @media (max-width: $scren-small )  
+    @media (max-width: $scren-small )
       width: 250px
       height: 100px
       font-size: 15px
@@ -75,7 +73,7 @@ $scren-small: 600px
     &:nth-child(2)
       @include mixin.typing($delay: 1s)
       width: 0
-      
+
   @media (max-width: $scren-small )
     width: 250px
     text-align: justify
@@ -84,27 +82,18 @@ $scren-small: 600px
   height: auto
   @include mixin.justification($flex: flex,$justify: space-around , $align:flex-start )
   margin-top: 50px
-  border:3px solid white
+  border: 3px solid white
   flex-direction: column
   text-align: justify
   font-size: 20px
   p
     padding: 15px 15px 15px 15px
-  &:nth-child(1)
-    @include mixin.typing($delay: 1s)
-    @include mixin.animation-mixin
-  &:nth-child(2)
-    @include mixin.animation-mixin
-    @include mixin.typing($delay: 2s)
-  &:nth-child(3)  
-    @include mixin.animation-mixin
-    @include mixin.typing($delay: 3s)
 
   @media (max-width: $scren-small )
     width: 250px
   img
     width: 100px
-  
+
 @keyframes walk
   0%
     left: -10%

@@ -8,10 +8,11 @@ import asriel from "../imgs/asriel.png"
 
 
 function About() {
+  const timeSave = document.getElementById("hSave") 
   const d = new Date()
   let hour = d.getHours()
   let minutes = d.getMinutes()
-
+  
 
   const [key, setKey] = useState<number>(0)
 
@@ -26,13 +27,14 @@ function About() {
 
       )
     }else if(key == 1) {
+      timeSave.innerHTML = `${hour}:${minutes}`
       return (
-
         <div id="about__message">
-          <p>* (hello my name is jorge, i'm 19 years old) </p>
-          <p>* (I'm studying software engineering and I'm learning technologies as html, css, javascript, react, node, postgres, sass)</p>
-          <p>* (besides starting to learn java)</p>
-          <a href="#interaction">Click for continue</a>
+          <p>* hello my name is jorge, i'm 19 years old</p>
+          <p>* I'm studying software engineering </p>
+          <p> I'm learning technologies as html, css, javascript, react, node, postgres, sass, java</p>
+          <p>* besides starting to learn java</p>
+
         </div>
 
       )
